@@ -1,0 +1,149 @@
+{
+  "system": "EDEN_SKYE_AUTONOMOUS_LAUNCH",
+  "version": "2026-05-31",
+  "owner": "Jeremy",
+  "mode": "maximum_safe_autonomy",
+  "intelligence_repo": "Strategic-Minds/EDEN_SKYE",
+  "orchestration_repo": "XPS-IINTELLIGENCE-SYSTEMS/XPS_AUTO_BUILDER",
+  "primary_launch_domains": [
+    "aicantdothis.net",
+    "epoxywillchangeyourlife.com"
+  ],
+  "brand_entities": [
+    {
+      "name": "Eden Skye",
+      "role": "fictional adult AI luxury creator brand and attention engine",
+      "boundaries": [
+        "fictional AI identity must not be presented as a real human",
+        "platform-safe sensual luxury only",
+        "no explicit sexual content",
+        "no deceptive engagement or bot growth"
+      ]
+    },
+    {
+      "name": "Epoxy Will Change Your Life",
+      "role": "commerce, education, proof, and transformation engine"
+    },
+    {
+      "name": "AI Can't Do This",
+      "role": "curiosity, AI fear, human-skill contrast, and viral debate engine"
+    }
+  ],
+  "connected_capabilities": {
+    "github": {
+      "needed": true,
+      "method": "repo source truth, issues, pull requests, code and docs coordination",
+      "required_access": ["contents_read", "contents_write", "pull_request_write"]
+    },
+    "google_drive": {
+      "needed": true,
+      "method": "source documents, business plans, dashboards, Xyla handoff sheets, and workbook intelligence",
+      "required_access": ["drive_read", "docs_read", "sheets_read"],
+      "write_rule": "write only after explicit approval for canon changes"
+    },
+    "supabase": {
+      "needed": true,
+      "method": "runtime telemetry, bridge queues, approvals, evidence, blockers, social draft state",
+      "project_ref_verified": "prhppuuwcnmfdhwsagug",
+      "required_tables": [
+        "runtime_telemetry_events",
+        "bridge_tasks",
+        "bridge_evidence",
+        "bridge_blockers",
+        "bridge_connector_actions",
+        "approval_queue",
+        "social_media_bridge"
+      ],
+      "write_rule": "no schema or production data mutation without approval"
+    },
+    "vercel": {
+      "needed": true,
+      "method": "cron triggers and hosted Auto Builder runtime routes",
+      "required_env_vars": ["CRON_SECRET", "SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"],
+      "cron_expectation": "social bridge and recursive control may run every 5 minutes as triggers, not uncontrolled workers"
+    },
+    "metricool": {
+      "needed": true,
+      "method": "planning, timing, analytics, and draft social scheduling",
+      "required_env_vars": ["METRICOOL_API_URL", "METRICOOL_API_TOKEN"],
+      "verified_test_brand_id": "6316987",
+      "publish_rule": "draft-only by default; public posting requires approval"
+    },
+    "xyla": {
+      "needed": true,
+      "method": "autoposting and content feed using approved Epoxy Will Change Your Life source content",
+      "required_inputs": ["approved content source", "caption", "CTA", "platform", "approval state", "risk notes"],
+      "publish_rule": "only approved content may move from draft to public"
+    },
+    "shopify": {
+      "needed": true,
+      "method": "lead capture, free starter pack, products, bundles, and sales conversion",
+      "write_rule": "no product, collection, discount, theme, payment, or live store mutation without approval"
+    },
+    "heygen_runway_descript_invideo": {
+      "needed": true,
+      "method": "avatar video, cinematic image/video, repurposing, edits, and campaign-ready clips",
+      "approval_rule": "approve public-facing assets before publishing"
+    }
+  },
+  "automation_lanes": [
+    {
+      "lane": "intake",
+      "purpose": "collect approved sources from Drive, GitHub, Shopify, Xyla, Metricool, and Supabase",
+      "default_action": "read and summarize"
+    },
+    {
+      "lane": "planning",
+      "purpose": "turn source material into campaign packets, content calendars, and task queues",
+      "default_action": "draft and score"
+    },
+    {
+      "lane": "production",
+      "purpose": "create scripts, captions, shot lists, image briefs, avatar prompts, and ad variants",
+      "default_action": "prepare assets and drafts"
+    },
+    {
+      "lane": "distribution",
+      "purpose": "route approved drafts into Metricool, Xyla, Shopify landing paths, or content planner queues",
+      "default_action": "draft-only queue"
+    },
+    {
+      "lane": "analytics",
+      "purpose": "score daily posts, identify winners, clone strongest hooks and formats",
+      "default_action": "measure and recommend"
+    },
+    {
+      "lane": "governance",
+      "purpose": "block unsafe, unapproved, unverified, external, or high-risk actions",
+      "default_action": "approval hold"
+    }
+  ],
+  "approval_gates": {
+    "public_social_post": true,
+    "paid_ad_launch": true,
+    "shopify_mutation": true,
+    "supabase_migration": true,
+    "vercel_production_deploy": true,
+    "external_email_or_sms": true,
+    "payment_or_discount_change": true,
+    "source_truth_canon_change": true
+  },
+  "growth_target": {
+    "target_followers_per_month": 10000,
+    "required_net_followers_per_day": 333,
+    "core_method": "high-volume content testing, creator leverage, paid winner amplification, retargeting, and weekly winner cloning",
+    "forbidden_method": "fake followers, fake likes, fake views, bot comments, or platform evasion"
+  },
+  "daily_content_minimum": {
+    "tiktok": 4,
+    "instagram_reels": 2,
+    "instagram_stories": 3,
+    "facebook_posts": 2,
+    "personal_page_bridge_posts": 1
+  },
+  "measurement_thresholds": {
+    "kill": "low retention, low watch time, low shares, no profile movement after first test window",
+    "improve": "moderate watch time or saves but weak follow-through",
+    "clone": "high retention, high saves or shares, follower conversion, comments, or Shopify clicks"
+  }
+}
